@@ -134,7 +134,6 @@ if ($(location).prop('hash')) {
 $(document).ready(function () {
   var { left, top } = logo.first().position();
   var width = 75 / 2;
-  console.log(left, top);
   startup.fadeIn();
   setTimeout(function () {
     startup.css({ width: '75', left: left + width, top: top + width });

@@ -451,7 +451,8 @@ section {
     color: maroon; }
 
 .startup {
-  width: 500px;
+  max-width: 500px;
+  width: 60%;
   position: fixed;
   top: 50%;
   left: 50%;
@@ -460,6 +461,3 @@ section {
   transform: translate(-50%, -50%);
   transition: all 1s;
   display: none; }
-
-.animate {
-  width: 75px; }
