@@ -1,0 +1,88 @@
+#header {
+  padding: 20px 10vw;
+  background-color: transparent;
+
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  transition: all 0.5s;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  z-index: 25;
+
+  @media (max-width: 1500px) {
+    padding-left: 5vw;
+    padding-right: 5vw;
+  }
+
+  @media (max-width: 800px) {
+    padding-left: 2.5vw;
+    padding-right: 2.5vw;
+  }
+
+  .logo {
+    width: fit-content;
+    img {
+      width: 75px;
+      border-radius: 50%;
+    }
+  }
+
+  .header-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    a {
+      color: $purple-dark;
+      transition: all 0.3s;
+
+      &:hover,
+      &.active {
+        color: $purple-bright;
+      }
+      &:not(:last-child) {
+        margin-right: 28px;
+      }
+    }
+
+    & {
+      @media (max-width: 1300px) {
+        display: none;
+      }
+    }
+  }
+
+  #toggle-menu {
+    font-size: 32px;
+    cursor: pointer;
+    color: $purple-dark;
+    @media (min-width: 1301px) {
+      display: none;
+    }
+  }
+}
+
+.header-scrolled {
+  padding-top: 16px !important;
+  padding-bottom: 16px !important;
+  background-color: $color-primary !important;
+  box-shadow: 0px 0px 30px rgb(127, 137, 161);
+
+  .header-nav {
+    a {
+      color: white !important;
+      &:hover,
+      &.active {
+        color: $color-active !important;
+      }
+    }
+  }
+
+  #toggle-menu {
+    color: white !important;
+  }
+}

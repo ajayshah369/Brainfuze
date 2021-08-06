@@ -1,0 +1,18 @@
+#back-to-top {
+  position: fixed;
+  right: 25px;
+  bottom: 25px;
+  background-color: $color-primary;
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  cursor: pointer;
+  font-size: 32px;
+  color: white;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  transition: all 0.3s;
+}

@@ -1,0 +1,31 @@
+.side-nav {
+  width: 300px;
+  position: fixed;
+  left: 0;
+  top: 0;
+  height: 100vh;
+  transform: translateX(-100%);
+  z-index: 100;
+  background-color: $color-primary;
+  transition: all 0.3s;
+
+  display: flex;
+  flex-direction: column;
+
+  padding: 30px;
+
+  a:not(:last-child) {
+    margin-bottom: 25px;
+  }
+
+  img {
+    border-radius: 50%;
+    width: 100px;
+    margin-bottom: 50px;
+  }
+
+  overflow-y: auto;
+  &::-webkit-scrollbar {
+    display: none;
+  }
+}

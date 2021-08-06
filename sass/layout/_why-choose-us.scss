@@ -1,0 +1,38 @@
+#why-choose-us {
+  padding: 50px 0;
+
+  h1 {
+    color: $purple-dark;
+    font-size: 38px;
+    text-align: center;
+    margin-bottom: 10px;
+  }
+
+  p {
+    max-width: 350px;
+    margin: 0 auto;
+    text-align: justify;
+    font-size: 24px;
+    font-weight: 400;
+    color: $color-text;
+    font-style: oblique;
+    width: 80%;
+
+    &:not(:last-child) {
+      margin-bottom: 10px;
+    }
+
+    i {
+      margin-right: 3px;
+      color: green;
+    }
+
+    @media (max-width: 900px) {
+      font-size: 22px;
+    }
+
+    @media (max-width: 800px) {
+      font-size: 20px;
+    }
+  }
+}
