@@ -38,3 +38,18 @@ img,
 section {
   display: block;
 }
+
+.aj7 {
+  background-color: #000;
+  padding: 4px;
+  color: rgb(253, 249, 227);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  pre {
+    font-size: 14px;
+  }
+  a {
+    color: #ffc541;
+  }
+}

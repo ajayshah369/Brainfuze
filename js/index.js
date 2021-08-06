@@ -4,6 +4,10 @@ var header = $('#header');
 var toggle_menu = $('#toggle-menu');
 var backdrop = $('.backdrop');
 var side_nav = $('.side-nav');
+var startup = $('.startup');
+var logo = $('.logo img');
+
+startup.hide();
 
 if ($(window).scrollTop() > 0) {
   header.addClass('header-scrolled');
@@ -107,6 +111,38 @@ $(window).on('scroll', function () {
 });
 
 // Activate smooth scroll on page load with hash links in the url
+
+if ($(location).prop('hash')) {
+  var hash = $(location).prop('hash');
+
+  if ($(hash)) {
+    var scrollto = $(hash).first().position().top - 113;
+
+    $(document).ready(function () {
+      $('html, body').animate(
+        {
+          scrollTop: scrollto,
+        },
+        100
+      );
+    });
+  }
+}
+
+// **********************************************
+
+$(document).ready(function () {
+  var { left, top } = logo.first().position();
+  var width = 75 / 2;
+  console.log(left, top);
+  startup.fadeIn();
+  setTimeout(function () {
+    startup.css({ width: '75', left: left + width, top: top + width });
+    setTimeout(function () {
+      startup.css('display', 'none');
+    }, 1000);
+  }, 600);
+});
 
 // ************************************************
 

@@ -2,24 +2,34 @@
   background-color: rgb(20, 20, 20);
   color: #fff;
   text-align: center;
-  padding-top: 20px;
+  padding: 50px 0;
 
   pre {
     font-size: 16px;
-    margin: 50px 0;
   }
 
-  .aj7 {
-    margin-top: 10px;
-    background-color: #000;
-    padding: 4px;
-    color: rgb(253, 249, 227);
-    pre {
-      font-size: 14px;
-      margin: 0;
+  .social-media {
+    p {
+      margin: 16px 0 8px 0;
     }
     a {
-      color: #ffc541;
+      i {
+        font-size: 32px;
+      }
+      padding: 0 4px;
+    }
+  }
+}
+
+.footer-email {
+  background-color: #000;
+  color: #fff;
+  text-align: center;
+  padding: 4px 0;
+
+  p {
+    span {
+      color: $purple-bright;
     }
   }
 }
