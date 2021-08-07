@@ -92,7 +92,7 @@ section {
     justify-content: space-between;
     align-items: center; }
     #header .header-nav a {
-      color: white;
+      color: #301934;
       transition: all 0.3s; }
       #header .header-nav a:hover, #header .header-nav a.active {
         color: #bf40bf; }
@@ -158,20 +158,16 @@ section {
 
 #home {
   height: 100vh;
-  background-image: url(../assets/images/kelly-sikkema-fUdTivaXoYs-unsplash.jpg);
+  background-color: rgba(137, 207, 240, 0.1);
   background-size: cover;
   position: relative; }
-  @media (max-width: 900px) {
-    #home {
-      background-image: url(../assets/images/austin-distel-qgdJX9mvMJI-unsplash.jpg); } }
   #home .content {
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     display: flex;
-    align-items: center;
-    background-color: rgba(41, 47, 53, 0.5); }
+    align-items: center; }
     @media (max-width: 900px) {
       #home .content {
         flex-direction: column-reverse; } }
@@ -186,7 +182,7 @@ section {
         font-size: 24px;
         font-weight: 700;
         font-style: italic;
-        color: #89cff0;
+        color: #301934;
         text-align: justify; }
     #home .content .hero img {
       width: 600px;
@@ -222,6 +218,21 @@ section {
     font-size: 38px;
     text-align: center;
     margin-bottom: 10px; }
+  #about .about {
+    display: flex;
+    justify-content: center; }
+    @media (max-width: 1300px) {
+      #about .about {
+        flex-direction: column;
+        align-items: center; } }
+    #about .about img {
+      max-width: 600px; }
+      @media (max-width: 600px) {
+        #about .about img {
+          width: 400px; } }
+      @media (max-width: 420px) {
+        #about .about img {
+          width: 300px; } }
   #about p {
     max-width: 600px;
     margin: 0 auto;
@@ -252,6 +263,10 @@ section {
     font-size: 38px;
     text-align: center;
     margin-bottom: 20px; }
+  #courses img {
+    max-width: 600px;
+    width: 90%;
+    margin: 0 auto 16px; }
   #courses .pack {
     max-width: 600px;
     margin: 0 auto;
@@ -285,6 +300,18 @@ section {
           font-size: 26px; }
         #courses .pack .monthly-pack pre {
           font-size: 18px; } }
+    #courses .pack .personalized-revision {
+      padding: 8px;
+      background-color: #fff;
+      border-left: 2px solid #bf40bf;
+      border-bottom: 2px solid #bf40bf;
+      margin-top: 20px; }
+      #courses .pack .personalized-revision h3 {
+        margin-bottom: 8px;
+        font-size: 28px; }
+      #courses .pack .personalized-revision p {
+        font-size: 20px;
+        line-height: 1.3; }
     #courses .pack .c {
       display: flex;
       align-items: center;
@@ -307,13 +334,6 @@ section {
         transition: all 0.3s; }
         #courses .pack .c a:hover {
           transform: scale(1.075); }
-  #courses .personalized-revision {
-    margin-top: 12px; }
-    #courses .personalized-revision h3 {
-      margin-bottom: 4px;
-      font-size: 26px; }
-    #courses .personalized-revision p {
-      font-size: 20px; }
 
 #why-choose-us {
   padding: 50px 0; }

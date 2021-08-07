@@ -1,12 +1,8 @@
 #home {
   height: 100vh;
-  background-image: url(../assets/images/kelly-sikkema-fUdTivaXoYs-unsplash.jpg);
+  background-color: rgba($color-secondary, 0.1);
   background-size: cover;
   position: relative;
-
-  @media (max-width: 900px) {
-    background-image: url(../assets/images/austin-distel-qgdJX9mvMJI-unsplash.jpg);
-  }
 
   .content {
     position: absolute;
@@ -15,7 +11,6 @@
     transform: translate(-50%, -50%);
     display: flex;
     align-items: center;
-    background-color: rgba(41, 47, 53, 0.5);
 
     @media (max-width: 900px) {
       flex-direction: column-reverse;
@@ -35,7 +30,7 @@
         font-size: 24px;
         font-weight: 700;
         font-style: italic;
-        color: $color-secondary;
+        color: $purple-dark;
         text-align: justify;
       }
     }
