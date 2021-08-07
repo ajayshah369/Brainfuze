@@ -5,3 +5,6 @@ js/bundle.min.js
 css/style.comp.css
 css/style.prefix.css
 css/style.min.css
+.firebaserc
+firebase.json
+.firebase

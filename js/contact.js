@@ -19,13 +19,13 @@ $(document).on('submit', '#contact-form', function (e) {
 
   axios
     .post(
-      'https://brainfuze-fe3e8-default-rtdb.firebaseio.com/students.json',
+      'https://brainfuze-23330-default-rtdb.firebaseio.com/students.json',
       data
     )
     .then((response) => {
       showAlert(
         'success',
-        'We got you, we will reach you. as soon as possible',
+        'We got you, we will reach out to you. as soon as possible',
         5
       );
       $('.contact-submit').text('Submit');
