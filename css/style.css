@@ -324,10 +324,10 @@ section {
           color: #301934;
           text-align: right; }
       #courses .pack .c a {
-        font-size: 28px;
+        font-size: 22px;
         font-weight: 600;
         color: white;
-        padding: 8px;
+        padding: 4px;
         background-color: #0000ff;
         border-radius: 6px;
         cursor: pointer;
