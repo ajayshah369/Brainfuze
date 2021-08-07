@@ -37,7 +37,7 @@
     justify-content: space-between;
     align-items: center;
     a {
-      color: $purple-dark;
+      color: white;
       transition: all 0.3s;
 
       &:hover,
@@ -69,7 +69,7 @@
 .header-scrolled {
   padding-top: 16px !important;
   padding-bottom: 16px !important;
-  background-color: $color-primary !important;
+  background-color: rgb(28, 32, 37) !important;
   box-shadow: 0px 0px 30px rgb(127, 137, 161);
 
   .header-nav {
@@ -77,7 +77,7 @@
       color: white !important;
       &:hover,
       &.active {
-        color: $color-active !important;
+        color: $purple-bright !important;
       }
     }
   }

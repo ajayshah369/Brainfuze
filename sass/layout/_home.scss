@@ -1,6 +1,7 @@
 #home {
   height: 100vh;
-  background-color: rgba($color-secondary, 0.125);
+  background-image: url(../../assets/images/kelly-sikkema-fUdTivaXoYs-unsplash.jpg);
+  background-size: cover;
   position: relative;
 
   .content {
@@ -10,6 +11,7 @@
     transform: translate(-50%, -50%);
     display: flex;
     align-items: center;
+    background-color: rgba(41, 47, 53, 0.5);
 
     @media (max-width: 900px) {
       flex-direction: column-reverse;
@@ -29,7 +31,7 @@
         font-size: 24px;
         font-weight: 700;
         font-style: italic;
-        color: $purple-dark;
+        color: $color-secondary;
         text-align: justify;
       }
     }
