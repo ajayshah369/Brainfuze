@@ -1,2 +1,7 @@
 node_modules
 yarn.lock
+build
+js/bundle.min.js
+css/style.comp.css
+css/style.prefix.css
+css/style.min.css
