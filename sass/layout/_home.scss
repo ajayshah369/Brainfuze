@@ -4,6 +4,10 @@
   background-size: cover;
   position: relative;
 
+  @media (max-width: 900px) {
+    background-image: url(../assets/images/austin-distel-qgdJX9mvMJI-unsplash.jpg);
+  }
+
   .content {
     position: absolute;
     top: 50%;
