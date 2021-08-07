@@ -342,15 +342,15 @@ section {
     font-size: 38px;
     text-align: center;
     margin-bottom: 10px; }
+  #why-choose-us .points {
+    width: fit-content;
+    margin: 0 auto; }
   #why-choose-us p {
-    max-width: 350px;
-    margin: 0 auto;
     text-align: justify;
     font-size: 24px;
     font-weight: 400;
     color: #555555;
-    font-style: oblique;
-    width: 80%; }
+    font-style: oblique; }
     #why-choose-us p:not(:last-child) {
       margin-bottom: 10px; }
     #why-choose-us p i {
